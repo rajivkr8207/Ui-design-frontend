@@ -1,0 +1,45 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+html {
+//   font-size: clamp(14px, 1vw, 18px);
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #121212;
+  color: white;
+  font-family: chillax;
+}
+
+@mixin flex-center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+#view1{
+    height: 100vh;
+    background-color: red;
+@include flex-center();
+flex-direction: column;
+justify-content: space-between;
+text-align: center;
+padding: 1.5rem 1rem;
+    h1{
+        font-size: 5rem;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+}
